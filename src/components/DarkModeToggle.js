@@ -1,8 +1,17 @@
 import React from 'react';
 
 function DarkModeToggle () {
+    const toggleDark = () => {
+    document.documentElement.classList.toggle('dark');
+  };
+
   return (
-    <div>DarkModeToggle</div>
+    <button
+      onClick={toggleDark}
+      className="absolute top-4 right-4 bg-gray-300 dark:bg-gray-600 p-2 rounded"
+    >
+      🌓
+    </button>
   )
 }
 

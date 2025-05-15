@@ -1,18 +1,30 @@
-import React from 'react';
+// components/DarkModeToggle.jsx
+import React, { useEffect, useState } from "react";
 
-function DarkModeToggle () {
-    const toggleDark = () => {
-    document.documentElement.classList.toggle('dark');
-  };
+function DarkModeToggle() {
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) {
+      root.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      root.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   return (
     <button
-      onClick={toggleDark}
-      className="absolute top-4 right-4 bg-gray-300 dark:bg-gray-600 p-2 rounded"
+      onClick={() => setDarkMode(!darkMode)}
+      className="bg-gray-200 text-black dark:bg-gray-700 dark:text-white px-4 py-2 rounded-lg transition"
     >
-      🌓
+      {darkMode ? "☀️ Light" : "🌙 Dark"}
     </button>
-  )
+  );
 }
 
 export default DarkModeToggle;

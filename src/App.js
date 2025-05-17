@@ -131,18 +131,28 @@ function App() {
 
       {/* Skills section */}
       <section id="skills" className="bg-gray-900 dark:bg-gray-100 py-16 px-6">
-        <h3 className="text-3xl font-bold text-center mb-10 text-white text-gray-700 dark:text-black font-heading">
+        <h3 className="text-3xl font-bold text-center mb-10 text-white dark:text-black font-heading">
           Skills
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center text-white dark:text-black font-sans">
-          <span className="bg-teal-500/10 p-4 rounded-xl">HTML5</span>
-          <span className="bg-teal-500/10 p-4 rounded-xl">CSS3</span>
-          <span className="bg-teal-500/10 p-4 rounded-xl">JavaScript</span>
-          <span className="bg-teal-500/10 p-4 rounded-xl">React.js</span>
-          <span className="bg-teal-500/10 p-4 rounded-xl">Tailwind CSS</span>
-          <span className="bg-teal-500/10 p-4 rounded-xl">Node.js</span>
-          <span className="bg-teal-500/10 p-4 rounded-xl">Express.js</span>
-          <span className="bg-teal-500/10 p-4 rounded-xl">MongoDB</span>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center font-sans">
+          {[
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "React.js",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+          ].map((skill, i) => (
+            <div
+              key={i}
+              className="bg-teal-400/10 p-6 rounded-xl shadow-md transform hover:scale-105 hover:shadow-lg 
+              transition duration-300 ease-in-out text-white dark:text-black text-lg font-semibold"
+            >
+              {skill}
+            </div>
+          ))}
         </div>
       </section>
 

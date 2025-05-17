@@ -26,14 +26,14 @@ function Header () {
 
   return (
    <header className="p-6 flex justify-between items-center max-w-6xl mx-auto">
-      <h1 className=" md:text-2xl tracking-wide italic text-center mt-2 font-[Pacifico] animate-fadeUp text-teal-600 dark:text-teal-400">
+      <h1 className=" md:text-xl tracking-wide italic text-center mt-2 font-[Pacifico] animate-fadeUp text-teal-600 dark:text-teal-400">
         Vaishnavi Shahakar 👩‍💻</h1>
       
       <div className="hidden md:flex items-center gap-6">
         <nav className="space-x-4">
-          <a href="#projects" className="hover:text-teal-400">Projects</a>
-          <a href="#skills" className="hover:text-teal-400">Skills</a>
-          <a href="#contact" className="hover:text-teal-400">Contact</a>
+          <a href="#projects" className="hover:text-teal-400 font-heading">Projects</a>
+          <a href="#skills" className="hover:text-teal-400 font-heading">Skills</a>
+          <a href="#contact" className="hover:text-teal-400 font-heading">Contact</a>
         </nav>
         <DarkModeToggle />
       </div>

@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       fontFamily: {
         pacifico: ["Pacifico", "cursive"],
+        sans: ['Roboto', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        heading: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         fadeUp: {

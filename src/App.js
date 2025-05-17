@@ -102,7 +102,7 @@ function App() {
         />
 
         <motion.h2
-          className="text-5xl font-extrabold mb-4 min-h-[3.5rem]"
+          className="text-3xl font-extrabold min-h-[3.5rem] font-heading"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -111,7 +111,7 @@ function App() {
           <span className="text-teal-400 animate-pulse">|</span>
         </motion.h2>
 
-        <p className="text-xl max-w-2xl mx-auto text-gray-700 dark:text-gray-300">
+        <p className="text-xl max-w-2xl mx-auto text-gray-700 dark:text-gray-300 font-sans">
           I build scalable, secure full-stack web applications using React,
           Node.js, Express, and MongoDB.
         </p>
@@ -119,8 +119,8 @@ function App() {
 
       {/* About Me section */}
       <section id="about" className="py-16 px-6 text-center">
-        <h3 className="text-3xl font-bold mb-6">About Me</h3>
-        <p className="text-lg max-w-3xl mx-auto text-gray-700 dark:text-gray-700 dark:text-white leading-relaxed">
+        <h3 className="text-3xl font-bold mb-6 font-heading">About Me</h3>
+        <p className="text-lg max-w-3xl mx-auto text-gray-700 dark:text-gray-700 dark:text-white leading-relaxed font-sans">
           I'm Vaishnavi Shahakar, a passionate Full Stack Developer who enjoys
           solving real-world problems through clean and efficient code. With a
           strong grasp of both front-end and back-end technologies, I create
@@ -131,10 +131,10 @@ function App() {
 
       {/* Skills section */}
       <section id="skills" className="bg-gray-900 dark:bg-gray-100 py-16 px-6">
-        <h3 className="text-3xl font-bold text-center mb-10 text-white text-gray-700 dark:text-black">
+        <h3 className="text-3xl font-bold text-center mb-10 text-white text-gray-700 dark:text-black font-heading">
           Skills
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center text-white dark:text-black">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center text-white dark:text-black font-sans">
           <span className="bg-teal-500/10 p-4 rounded-xl">HTML5</span>
           <span className="bg-teal-500/10 p-4 rounded-xl">CSS3</span>
           <span className="bg-teal-500/10 p-4 rounded-xl">JavaScript</span>
@@ -148,11 +148,11 @@ function App() {
 
       {/* Projects section */}
       <section id="projects" className="bg-slate-800 py-16 px-6 mt-10">
-        <h3 className="text-3xl font-bold text-center mb-12 text-white text-gray-700 dark:text-white">
+        <h3 className="text-3xl font-bold text-center mb-12 text-white text-gray-700 dark:text-white font-heading">
           Projects
         </h3>
 
-        <h4 className="text-xl font-semibold text-center mb-4 text-teal-400">
+        <h4 className="text-xl font-semibold text-center mb-4 text-teal-400 font-haeding">
           Individual Projects
         </h4>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
@@ -161,7 +161,7 @@ function App() {
           ))}
         </div>
 
-        <h4 className="text-xl font-semibold text-center mb-4 text-teal-400">
+        <h4 className="text-xl font-semibold text-center mb-4 text-teal-400 font-heading">
           Group Projects
         </h4>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -175,7 +175,7 @@ function App() {
       <ContactSection />
 
       {/* Footer */}
-      <footer className="text-center text-gray-700 text-sm py-8 dark:text-white">
+      <footer className="text-center text-gray-700 text-sm py-8 dark:text-white font-sans">
         © {new Date().getFullYear()} Vaishnavi Shahakar. Built with ❤️ and
         Tailwind CSS.
       </footer>
